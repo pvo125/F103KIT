@@ -34,7 +34,7 @@ void TSC2046_LowLevel_Init(void)
 	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_IN_FLOATING;
 	GPIO_Init(GPIOB, &GPIO_InitStruct);
 		
-	SPI_InitStruct.SPI_BaudRatePrescaler=SPI_BaudRatePrescaler_32;  //APB2 = 45MHz  SCK=45/32=1406250Hz 
+	SPI_InitStruct.SPI_BaudRatePrescaler=SPI_BaudRatePrescaler_32;  //APB2 = 36MHz  SCK=36/32=1125000Hz 
 	SPI_InitStruct.SPI_CPHA=SPI_CPHA_1Edge;
 	SPI_InitStruct.SPI_CPOL=SPI_CPOL_Low;
 	SPI_InitStruct.SPI_CRCPolynomial=7;

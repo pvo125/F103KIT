@@ -1,0 +1,1721 @@
+Dependencies for Project 'F103KIT_1963', Target 'F103KIT_1963': (DO NOT MODIFY !)
+F (..\CMSIS\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s)(0x580A36FD)(--cpu Cortex-M3 -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x--list .\mdk-arm\output\startup_stm32f10x_hd.lst --xref -o .\mdk-arm\output\startup_stm32f10x_hd.o --depend .\mdk-arm\output\startup_stm32f10x_hd.d)
+F (..\CMSIS\CoreSupport\core_cm3.c)(0x580A36FD)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\core_cm3.o --omf_browse .\mdk-arm\output\core_cm3.crf --depend .\mdk-arm\output\core_cm3.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+F (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.c)(0x580A36FD)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\system_stm32f10x.o --omf_browse .\mdk-arm\output\system_stm32f10x.crf --depend .\mdk-arm\output\system_stm32f10x.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\USER\main\main.c)(0x580C5234)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\main.o --omf_browse .\mdk-arm\output\main.crf --depend .\mdk-arm\output\main.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (..\USER\bxCAN\CAN.h)(0x580A36FE)
+F (..\USER\main\stm32f10x_it.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_it.o --omf_browse .\mdk-arm\output\stm32f10x_it.crf --depend .\mdk-arm\output\stm32f10x_it.d)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (..\USER\bxCAN\CAN.h)(0x580A36FE)
+F (..\USER\main\template.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\template.o --omf_browse .\mdk-arm\output\template.crf --depend .\mdk-arm\output\template.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\main\header.h)(0x580A36FE)()
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_fsmc.o --omf_browse .\mdk-arm\output\stm32f10x_fsmc.crf --depend .\mdk-arm\output\stm32f10x_fsmc.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_rcc.o --omf_browse .\mdk-arm\output\stm32f10x_rcc.crf --depend .\mdk-arm\output\stm32f10x_rcc.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_dma.o --omf_browse .\mdk-arm\output\stm32f10x_dma.crf --depend .\mdk-arm\output\stm32f10x_dma.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_gpio.o --omf_browse .\mdk-arm\output\stm32f10x_gpio.crf --depend .\mdk-arm\output\stm32f10x_gpio.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_pwr.o --omf_browse .\mdk-arm\output\stm32f10x_pwr.crf --depend .\mdk-arm\output\stm32f10x_pwr.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_spi.o --omf_browse .\mdk-arm\output\stm32f10x_spi.crf --depend .\mdk-arm\output\stm32f10x_spi.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_sdio.o --omf_browse .\mdk-arm\output\stm32f10x_sdio.crf --depend .\mdk-arm\output\stm32f10x_sdio.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_rtc.o --omf_browse .\mdk-arm\output\stm32f10x_rtc.crf --depend .\mdk-arm\output\stm32f10x_rtc.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\stm32f10x_exti.o --omf_browse .\mdk-arm\output\stm32f10x_exti.crf --depend .\mdk-arm\output\stm32f10x_exti.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+F (..\USER\MX25L8005\mx25l8005.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\mx25l8005.o --omf_browse .\mdk-arm\output\mx25l8005.crf --depend .\mdk-arm\output\mx25l8005.d)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963_lcd.h)(0x580A36FE)
+F (..\USER\ssd1963\ssd1963_lcd.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\ssd1963_lcd.o --omf_browse .\mdk-arm\output\ssd1963_lcd.crf --depend .\mdk-arm\output\ssd1963_lcd.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\Fonts\Arial16.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\arial16.o --omf_browse .\mdk-arm\output\arial16.crf --depend .\mdk-arm\output\arial16.d)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\GUI\GUI_X.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\gui_x.o --omf_browse .\mdk-arm\output\gui_x.crf --depend .\mdk-arm\output\gui_x.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+F (..\USER\GUI\GUIConf.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\guiconf.o --omf_browse .\mdk-arm\output\guiconf.crf --depend .\mdk-arm\output\guiconf.d)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\GUI\LCDConf.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\lcdconf.o --omf_browse .\mdk-arm\output\lcdconf.crf --depend .\mdk-arm\output\lcdconf.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\GUIDRV_FlexColor.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7D364)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\USER\GUI\STemWin522_CM3_Keil.lib)(0x580A36FE)()
+F (..\USER\GUI_DIALOG\ALARMDLG.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\alarmdlg.o --omf_browse .\mdk-arm\output\alarmdlg.crf --depend .\mdk-arm\output\alarmdlg.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\GUI_DIALOG\KEYDLG.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\keydlg.o --omf_browse .\mdk-arm\output\keydlg.crf --depend .\mdk-arm\output\keydlg.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\USER\GUI_DIALOG\MENUDLG.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\menudlg.o --omf_browse .\mdk-arm\output\menudlg.crf --depend .\mdk-arm\output\menudlg.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\GUI_DIALOG\PictureView.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\pictureview.o --omf_browse .\mdk-arm\output\pictureview.crf --depend .\mdk-arm\output\pictureview.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\USER\GUI_DIALOG\SD_File.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\sd_file.o --omf_browse .\mdk-arm\output\sd_file.crf --depend .\mdk-arm\output\sd_file.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7D364)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+F (..\USER\GUI_DIALOG\Start_WindowDLG.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\start_windowdlg.o --omf_browse .\mdk-arm\output\start_windowdlg.crf --depend .\mdk-arm\output\start_windowdlg.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7D364)
+F (..\USER\GUI_DIALOG\TIME_DATEDLG.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\time_datedlg.o --omf_browse .\mdk-arm\output\time_datedlg.crf --depend .\mdk-arm\output\time_datedlg.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\GUI_DIALOG\TIMERDLG.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\timerdlg.o --omf_browse .\mdk-arm\output\timerdlg.crf --depend .\mdk-arm\output\timerdlg.d)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\SDCARD\sdcard.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\sdcard.o --omf_browse .\mdk-arm\output\sdcard.crf --depend .\mdk-arm\output\sdcard.d)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7D364)
+F (..\USER\FatFS\diskio.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\diskio.o --omf_browse .\mdk-arm\output\diskio.crf --depend .\mdk-arm\output\diskio.d)
+I (..\USER\FatFS\diskio.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\FatFS\ff.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\ff.o --omf_browse .\mdk-arm\output\ff.crf --depend .\mdk-arm\output\ff.d)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\FatFS\diskio.h)(0x580A36FE)
+F (..\USER\FatFS\option\ccsbcs.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\ccsbcs.o --omf_browse .\mdk-arm\output\ccsbcs.crf --depend .\mdk-arm\output\ccsbcs.d)
+I (..\USER\FatFS\option\../ff.h)(0x580A36FE)
+I (..\USER\FatFS\option\../integer.h)(0x580A36FE)
+I (..\USER\FatFS\option\../ffconf.h)(0x580A36FE)
+F (..\USER\tjpgd1b\src\tjpg_lib.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\tjpg_lib.o --omf_browse .\mdk-arm\output\tjpg_lib.crf --depend .\mdk-arm\output\tjpg_lib.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+I (..\USER\tjpgd1b\src\tjpgd.h)(0x580A36FE)
+I (..\USER\tjpgd1b\src\integer.h)(0x580A36FE)
+F (..\USER\tjpgd1b\src\tjpgd.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\tjpgd.o --omf_browse .\mdk-arm\output\tjpgd.crf --depend .\mdk-arm\output\tjpgd.d)
+I (..\USER\tjpgd1b\src\tjpgd.h)(0x580A36FE)
+I (..\USER\tjpgd1b\src\integer.h)(0x580A36FE)
+F (..\USER\tjpgd1b\src\tjpgd.h)(0x580A36FE)()
+F (..\USER\TSC2046\tsc2046.c)(0x580C5573)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\tsc2046.o --omf_browse .\mdk-arm\output\tsc2046.crf --depend .\mdk-arm\output\tsc2046.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
+F (..\USER\icons\add_folder.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\add_folder.o --omf_browse .\mdk-arm\output\add_folder.crf --depend .\mdk-arm\output\add_folder.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\alarm.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\alarm.o --omf_browse .\mdk-arm\output\alarm.crf --depend .\mdk-arm\output\alarm.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\alarm_d.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\alarm_d.o --omf_browse .\mdk-arm\output\alarm_d.crf --depend .\mdk-arm\output\alarm_d.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\AlarmA.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\alarma.o --omf_browse .\mdk-arm\output\alarma.crf --depend .\mdk-arm\output\alarma.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\AlarmB.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\alarmb.o --omf_browse .\mdk-arm\output\alarmb.crf --depend .\mdk-arm\output\alarmb.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\bmp.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\bmp.o --omf_browse .\mdk-arm\output\bmp.crf --depend .\mdk-arm\output\bmp.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\date.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\date.o --omf_browse .\mdk-arm\output\date.crf --depend .\mdk-arm\output\date.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\del_folder.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\del_folder.o --omf_browse .\mdk-arm\output\del_folder.crf --depend .\mdk-arm\output\del_folder.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\exit.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\exit.o --omf_browse .\mdk-arm\output\exit.crf --depend .\mdk-arm\output\exit.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\gif.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\gif.o --omf_browse .\mdk-arm\output\gif.crf --depend .\mdk-arm\output\gif.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\hourglass.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\hourglass.o --omf_browse .\mdk-arm\output\hourglass.crf --depend .\mdk-arm\output\hourglass.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\jpg.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\jpg.o --omf_browse .\mdk-arm\output\jpg.crf --depend .\mdk-arm\output\jpg.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\next.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\next.o --omf_browse .\mdk-arm\output\next.crf --depend .\mdk-arm\output\next.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\paint.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\paint.o --omf_browse .\mdk-arm\output\paint.crf --depend .\mdk-arm\output\paint.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\pdf.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\pdf.o --omf_browse .\mdk-arm\output\pdf.crf --depend .\mdk-arm\output\pdf.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\photo.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\photo.o --omf_browse .\mdk-arm\output\photo.crf --depend .\mdk-arm\output\photo.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\prev.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\prev.o --omf_browse .\mdk-arm\output\prev.crf --depend .\mdk-arm\output\prev.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\pwm.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\pwm.o --omf_browse .\mdk-arm\output\pwm.crf --depend .\mdk-arm\output\pwm.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\screen.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\screen.o --omf_browse .\mdk-arm\output\screen.crf --depend .\mdk-arm\output\screen.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\icons\sd.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\sd.o --omf_browse .\mdk-arm\output\sd.crf --depend .\mdk-arm\output\sd.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7D364)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+F (..\USER\bxCAN\CAN.c)(0x580A36FE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CMSIS\CoreSupport -I..\CMSIS\DeviceSupport\ST\STM32F10x -I..\STM32F10x_StdPeriph_Driver\inc -I..\STM32F10x_StdPeriph_Driver\src -I..\USER\main -I..\USER\GUI -I..\USER\GUI\inc -I..\USER\GUI_DIALOG -I..\USER\SDCARD -I..\USER\FatFS -I..\USER\FatFS\option -I..\USER\TSC2046 -I..\USER\Fonts -I..\USER\MX25L8005 -I..\USER\ssd1963 -I..\USER\icons -I..\USER\tjpgd1b\src -I..\USER\bxCAN-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER-o .\mdk-arm\output\can.o --omf_browse .\mdk-arm\output\can.crf --depend .\mdk-arm\output\can.d)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x580A36FD)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7D364)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x580A36FD)
+I (..\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x_conf.h)(0x580C51B2)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x580A36FE)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x580A36FE)
+I (..\USER\bxCAN\CAN.h)(0x580A36FE)
+I (..\USER\main\header.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_ConfDefaults.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUIConf.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Type.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD.h)(0x580A36FE)
+I (..\USER\GUI\inc\Global.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Version.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_GUI.h)(0x580A36FE)
+I (..\USER\GUI\inc\BUTTON.h)(0x580A36FE)
+I (..\USER\GUI\inc\DIALOG_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\WIDGET.h)(0x580A36FE)
+I (..\USER\GUI\inc\WM_Intern.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Private.h)(0x580A36FE)
+I (..\USER\GUI\inc\LCD_Protected.h)(0x580A36FE)
+I (..\USER\GUI\inc\GUI_Debug.h)(0x580A36FE)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7D364)
+I (..\USER\GUI\inc\SCROLLBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CALENDAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHECKBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSECOLOR.h)(0x580A36FE)
+I (..\USER\GUI\inc\CHOOSEFILE.h)(0x580A36FE)
+I (..\USER\GUI\inc\DROPDOWN.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\EDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\FRAMEWIN.h)(0x580A36FE)
+I (..\USER\GUI\inc\GRAPH.h)(0x580A36FE)
+I (..\USER\GUI\inc\HEADER.h)(0x580A36FE)
+I (..\USER\GUI\inc\ICONVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\IMAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTVIEW.h)(0x580A36FE)
+I (..\USER\GUI\inc\LISTWHEEL.h)(0x580A36FE)
+I (..\USER\GUI\inc\MENU.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIEDIT.h)(0x580A36FE)
+I (..\USER\GUI\inc\MULTIPAGE.h)(0x580A36FE)
+I (..\USER\GUI\inc\PROGBAR.h)(0x580A36FE)
+I (..\USER\GUI\inc\RADIO.h)(0x580A36FE)
+I (..\USER\GUI\inc\SLIDER.h)(0x580A36FE)
+I (..\USER\GUI\inc\SPINBOX.h)(0x580A36FE)
+I (..\USER\GUI\inc\TEXT.h)(0x580A36FE)
+I (..\USER\GUI\inc\TREEVIEW.h)(0x580A36FE)
+I (..\USER\FatFS\ff.h)(0x580A36FE)
+I (..\USER\FatFS\integer.h)(0x580A36FE)
+I (..\USER\FatFS\ffconf.h)(0x580A36FE)
+I (..\USER\SDCARD\sdcard.h)(0x580A36FE)
+I (..\USER\ssd1963\ssd1963.h)(0x580A36FE)
+I (..\USER\MX25L8005\mx25l8005.h)(0x580A36FE)
+I (..\USER\GUI\LCDConf.h)(0x580A36FE)
+I (..\USER\TSC2046\tsc2046.h)(0x580A36FE)
