@@ -1,5 +1,5 @@
-.\mdk-arm\output\ff.o: USER\FatFS\ff.c
-.\mdk-arm\output\ff.o: USER\FatFS\ff.h
-.\mdk-arm\output\ff.o: USER\FatFS\integer.h
-.\mdk-arm\output\ff.o: USER\FatFS\ffconf.h
-.\mdk-arm\output\ff.o: USER\FatFS\diskio.h
+.\output\ff.o: ..\USER\FatFS\ff.c
+.\output\ff.o: ..\USER\FatFS\ff.h
+.\output\ff.o: ..\USER\FatFS\integer.h
+.\output\ff.o: ..\USER\FatFS\ffconf.h
+.\output\ff.o: ..\USER\FatFS\diskio.h

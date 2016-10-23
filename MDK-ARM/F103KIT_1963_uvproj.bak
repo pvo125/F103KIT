@@ -362,7 +362,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CMSIS\CoreSupport;.\CMSIS\DeviceSupport\ST\STM32F10x;.\STM32F10x_StdPeriph_Driver\src;.\STM32F10x_StdPeriph_Driver\inc;.\USER\main;.\USER\GUI;.\USER\GUI\inc;.\USER\GUI_DIALOG;.\USER\SDCARD;.\USER\FatFS;.\USER\FatFS\option;.\USER\TSC2046;.\USER\Fonts;.\USER\MX25L8005;.\USER\ssd1963;.\USER\icons;.\USER\tjpgd1b\src;.\USER\bxCAN</IncludePath>
+              <IncludePath>..\CMSIS\CoreSupport;..\CMSIS\DeviceSupport\ST\STM32F10x;..\STM32F10x_StdPeriph_Driver\inc;..\STM32F10x_StdPeriph_Driver\src;..\USER\main;..\USER\GUI;..\USER\GUI\inc;..\USER\GUI_DIALOG;..\USER\SDCARD;..\USER\FatFS;..\USER\FatFS\option;..\USER\TSC2046;..\USER\Fonts;..\USER\MX25L8005;..\USER\ssd1963;..\USER\icons;..\USER\tjpgd1b\src;..\USER\bxCAN</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -408,7 +408,7 @@
             <File>
               <FileName>startup_stm32f10x_hd.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\CMSIS\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s</FilePath>
+              <FilePath>..\CMSIS\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -418,12 +418,12 @@
             <File>
               <FileName>core_cm3.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\CMSIS\CoreSupport\core_cm3.c</FilePath>
+              <FilePath>..\CMSIS\CoreSupport\core_cm3.c</FilePath>
             </File>
             <File>
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.c</FilePath>
+              <FilePath>..\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -431,24 +431,24 @@
           <GroupName>main</GroupName>
           <Files>
             <File>
-              <FileName>stm32f10x_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\main\stm32f10x_it.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\main\main.c</FilePath>
+              <FilePath>..\USER\main\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\main\stm32f10x_it.c</FilePath>
             </File>
             <File>
               <FileName>template.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\main\template.c</FilePath>
+              <FilePath>..\USER\main\template.c</FilePath>
             </File>
             <File>
               <FileName>header.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\USER\main\header.h</FilePath>
+              <FilePath>..\USER\main\header.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -456,49 +456,49 @@
           <GroupName>STM32F10x_StdPeriph_Driver</GroupName>
           <Files>
             <File>
+              <FileName>stm32f10x_fsmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f10x_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_fsmc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_pwr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_sdio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_rtc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</FilePath>
+              <FilePath>..\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -508,7 +508,7 @@
             <File>
               <FileName>mx25l8005.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\MX25L8005\mx25l8005.c</FilePath>
+              <FilePath>..\USER\MX25L8005\mx25l8005.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -518,7 +518,7 @@
             <File>
               <FileName>ssd1963_lcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\ssd1963\ssd1963_lcd.c</FilePath>
+              <FilePath>..\USER\ssd1963\ssd1963_lcd.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -528,7 +528,7 @@
             <File>
               <FileName>Arial16.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\Fonts\Arial16.c</FilePath>
+              <FilePath>..\USER\Fonts\Arial16.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -536,24 +536,24 @@
           <GroupName>GUI</GroupName>
           <Files>
             <File>
-              <FileName>LCDConf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\GUI\LCDConf.c</FilePath>
-            </File>
-            <File>
               <FileName>GUI_X.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI\GUI_X.c</FilePath>
+              <FilePath>..\USER\GUI\GUI_X.c</FilePath>
             </File>
             <File>
               <FileName>GUIConf.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI\GUIConf.c</FilePath>
+              <FilePath>..\USER\GUI\GUIConf.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCDConf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\GUI\LCDConf.c</FilePath>
             </File>
             <File>
               <FileName>STemWin522_CM3_Keil.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>.\USER\GUI\STemWin522_CM3_Keil.lib</FilePath>
+              <FilePath>..\USER\GUI\STemWin522_CM3_Keil.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -563,42 +563,42 @@
             <File>
               <FileName>ALARMDLG.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\ALARMDLG.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\ALARMDLG.c</FilePath>
             </File>
             <File>
               <FileName>KEYDLG.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\KEYDLG.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\KEYDLG.c</FilePath>
             </File>
             <File>
               <FileName>MENUDLG.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\MENUDLG.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\MENUDLG.c</FilePath>
             </File>
             <File>
               <FileName>PictureView.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\PictureView.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\PictureView.c</FilePath>
             </File>
             <File>
               <FileName>SD_File.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\SD_File.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\SD_File.c</FilePath>
             </File>
             <File>
               <FileName>Start_WindowDLG.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\Start_WindowDLG.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\Start_WindowDLG.c</FilePath>
             </File>
             <File>
               <FileName>TIME_DATEDLG.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\TIME_DATEDLG.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\TIME_DATEDLG.c</FilePath>
             </File>
             <File>
               <FileName>TIMERDLG.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\GUI_DIALOG\TIMERDLG.c</FilePath>
+              <FilePath>..\USER\GUI_DIALOG\TIMERDLG.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -608,7 +608,7 @@
             <File>
               <FileName>sdcard.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\SDCARD\sdcard.c</FilePath>
+              <FilePath>..\USER\SDCARD\sdcard.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -618,17 +618,17 @@
             <File>
               <FileName>diskio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\FatFS\diskio.c</FilePath>
+              <FilePath>..\USER\FatFS\diskio.c</FilePath>
             </File>
             <File>
               <FileName>ff.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\FatFS\ff.c</FilePath>
+              <FilePath>..\USER\FatFS\ff.c</FilePath>
             </File>
             <File>
               <FileName>ccsbcs.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\FatFS\option\ccsbcs.c</FilePath>
+              <FilePath>..\USER\FatFS\option\ccsbcs.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -636,19 +636,19 @@
           <GroupName>TjpgDec</GroupName>
           <Files>
             <File>
+              <FileName>tjpg_lib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\tjpgd1b\src\tjpg_lib.c</FilePath>
+            </File>
+            <File>
               <FileName>tjpgd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\tjpgd1b\src\tjpgd.c</FilePath>
+              <FilePath>..\USER\tjpgd1b\src\tjpgd.c</FilePath>
             </File>
             <File>
               <FileName>tjpgd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\USER\tjpgd1b\src\tjpgd.h</FilePath>
-            </File>
-            <File>
-              <FileName>tjpg_lib.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\tjpgd1b\src\tjpg_lib.c</FilePath>
+              <FilePath>..\USER\tjpgd1b\src\tjpgd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -658,7 +658,7 @@
             <File>
               <FileName>tsc2046.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\TSC2046\tsc2046.c</FilePath>
+              <FilePath>..\USER\TSC2046\tsc2046.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -668,102 +668,102 @@
             <File>
               <FileName>add_folder.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\add_folder.c</FilePath>
+              <FilePath>..\USER\icons\add_folder.c</FilePath>
             </File>
             <File>
               <FileName>alarm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\alarm.c</FilePath>
+              <FilePath>..\USER\icons\alarm.c</FilePath>
             </File>
             <File>
               <FileName>alarm_d.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\alarm_d.c</FilePath>
+              <FilePath>..\USER\icons\alarm_d.c</FilePath>
             </File>
             <File>
               <FileName>AlarmA.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\AlarmA.c</FilePath>
+              <FilePath>..\USER\icons\AlarmA.c</FilePath>
             </File>
             <File>
               <FileName>AlarmB.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\AlarmB.c</FilePath>
+              <FilePath>..\USER\icons\AlarmB.c</FilePath>
             </File>
             <File>
               <FileName>bmp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\bmp.c</FilePath>
+              <FilePath>..\USER\icons\bmp.c</FilePath>
             </File>
             <File>
               <FileName>date.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\date.c</FilePath>
+              <FilePath>..\USER\icons\date.c</FilePath>
             </File>
             <File>
               <FileName>del_folder.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\del_folder.c</FilePath>
+              <FilePath>..\USER\icons\del_folder.c</FilePath>
             </File>
             <File>
               <FileName>exit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\exit.c</FilePath>
+              <FilePath>..\USER\icons\exit.c</FilePath>
             </File>
             <File>
               <FileName>gif.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\gif.c</FilePath>
+              <FilePath>..\USER\icons\gif.c</FilePath>
             </File>
             <File>
               <FileName>hourglass.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\hourglass.c</FilePath>
+              <FilePath>..\USER\icons\hourglass.c</FilePath>
             </File>
             <File>
               <FileName>jpg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\jpg.c</FilePath>
+              <FilePath>..\USER\icons\jpg.c</FilePath>
             </File>
             <File>
               <FileName>next.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\next.c</FilePath>
+              <FilePath>..\USER\icons\next.c</FilePath>
             </File>
             <File>
               <FileName>paint.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\paint.c</FilePath>
+              <FilePath>..\USER\icons\paint.c</FilePath>
             </File>
             <File>
               <FileName>pdf.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\pdf.c</FilePath>
+              <FilePath>..\USER\icons\pdf.c</FilePath>
             </File>
             <File>
               <FileName>photo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\photo.c</FilePath>
+              <FilePath>..\USER\icons\photo.c</FilePath>
             </File>
             <File>
               <FileName>prev.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\prev.c</FilePath>
+              <FilePath>..\USER\icons\prev.c</FilePath>
             </File>
             <File>
               <FileName>pwm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\pwm.c</FilePath>
+              <FilePath>..\USER\icons\pwm.c</FilePath>
             </File>
             <File>
               <FileName>screen.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\screen.c</FilePath>
+              <FilePath>..\USER\icons\screen.c</FilePath>
             </File>
             <File>
               <FileName>sd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\icons\sd.c</FilePath>
+              <FilePath>..\USER\icons\sd.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -773,7 +773,7 @@
             <File>
               <FileName>CAN.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\bxCAN\CAN.c</FilePath>
+              <FilePath>..\USER\bxCAN\CAN.c</FilePath>
             </File>
           </Files>
         </Group>
