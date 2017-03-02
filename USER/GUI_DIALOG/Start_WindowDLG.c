@@ -61,6 +61,7 @@
 	
 // USER START (Optionally insert additional defines)
 extern volatile uint8_t canerr_clr;
+extern volatile uint8_t canerr_disp;
 extern volatile uint8_t time_disp;
 extern volatile uint8_t canconnect;
 
@@ -77,6 +78,11 @@ extern uint8_t cycle_start_pwm;
 
 extern FIL pFile;
 
+#define FLAG_STATUS_PAGE	0x08002000
+extern volatile uint8_t write_flashflag;
+
+extern void Flash_page_erase(uint32_t address,uint8_t countpage);
+extern void Flash_prog(uint16_t * src,uint16_t * dst,uint32_t nbyte);
 
 void CreateStart(void);
 
@@ -245,10 +251,10 @@ void _cbBkWin(WM_MESSAGE* pMsg) {
 				case ID_ICON_EXIT:
 					switch(NCode) {
 						case WM_NOTIFICATION_RELEASED:
-							backlight=BACKLIGHT_OFF;
-							backlight_delay=0;
-							sleep_mode=1;
-							//NVIC_SystemReset();
+							//backlight=BACKLIGHT_OFF;
+							//backlight_delay=0;
+							//sleep_mode=1;
+							NVIC_SystemReset();
 						break;
 					}
 				break;
@@ -412,6 +418,9 @@ void CreateStart(void)
 
 void MainTask(void)
 {
+	uint16_t count;
+	uint16_t flag=0x00A7;
+	
 	uint32_t i;
 	NVIC_SetPriority(SysTick_IRQn,1);
 	WM_SetCallback(WM_HBKWIN, _cbBkWin);
@@ -450,10 +459,24 @@ void MainTask(void)
 		if(canerr_clr)
 		{
 			GUI_SetBkColor(GUI_DARKBLUE);
-			GUI_ClearRect(120,5,160,15);
-			GUI_ClearRect(190,5,230,15);
-			GUI_ClearRect(260,5,290,15);
+			GUI_ClearRect(120,5,290,15);
+			//GUI_ClearRect(190,5,230,15);
+			//GUI_ClearRect(260,5,290,15);
 			canerr_clr=0;
+			
+		}
+		if(canerr_disp)	
+		{
+				GUI_SetFont(&GUI_Font6x8);
+				GUI_DispStringAt("REC ",120,5);
+				GUI_DispDec((uint8_t)((CAN1->ESR)>>24),3);
+				GUI_DispStringAt("TEC ",190,5);
+				GUI_DispDec((uint8_t)((CAN1->ESR)>>16),3);
+				GUI_DispStringAt("ERF ",260,5);
+				GUI_DispDec((uint8_t)(CAN1->ESR),1);
+			
+				GUI_SetFont(&GUI_FontArial16);	
+				canerr_disp=0;
 		}
 		if(time_disp)
 		{
@@ -499,20 +522,47 @@ void MainTask(void)
 			ICONVIEW_AddBitmapItem(hALARMA,&bmAlarm_D,"");
 			ALARM_INT=0;
 		}
+/*
+*
+****************************************************************************************************************************/		
+		if(write_flashflag)
+		{
+					// проверим флаг  в секторе FLAG_STATUS во флэш.
+			count=0;
+			while(*(uint16_t*)(FLAG_STATUS_PAGE+count)!=0xFFFF)		// Перебираем байты пока не дойдем до неписанного поля 0xFF 
+			{
+			count+=2;
+			if(count>=2048)
+				{
+					count=0;
+					
+#ifdef MEDIUM_DENSITY			
+				Flash_page_erase(FLAG_STATUS_PAGE,2);
+#else	
+				Flash_page_erase(FLAG_STATUS_PAGE,1);
+#endif				
+				break;
+				}
+			}
+				
+			Flash_prog((uint16_t*)&flag,(uint16_t*)(FLAG_STATUS_PAGE+count),2);
+			SysTick->LOAD=(2500000*4);
+			SysTick->VAL=0;
+			while(!(SysTick->CTRL&SysTick_CTRL_COUNTFLAG_Msk)){}	
+			NVIC_SystemReset();
+		}
 		if(sleep_mode)
 			{
 			
 										
 			SysTick->CTRL&=~SysTick_CTRL_ENABLE_Msk;
 			SysTick->CTRL&=~SysTick_CTRL_TICKINT_Msk;
-			GPIOB->BSRR|=GPIO_BSRR_BS8;		//закрываем нижний MOSFET  выкл. питание на LCD		
-			
-			
 			NVIC_DisableIRQ(EXTI0_IRQn);	
 			NVIC_DisableIRQ(TIM6_IRQn); 							
 			NVIC_DisableIRQ(TIM7_IRQn); 									
 			NVIC_DisableIRQ(RTC_IRQn);						
-					
+			
+			GPIOB->BSRR=GPIO_BSRR_BS5;		//закрываем нижний MOSFET  выкл. питание на LCD					
 				
 			/*GPIO_InitStruct.GPIO_Mode=GPIO_Mode_AIN;
 			GPIO_InitStruct.GPIO_Speed=GPIO_Speed_2MHz;	
@@ -580,7 +630,7 @@ void MainTask(void)
 			/*GPIO_InitStruct.GPIO_Mode=GPIO_Mode_Out_PP;
 			GPIO_InitStruct.GPIO_Pin=GPIO_Pin_5;
 			GPIO_Init(GPIOB,&GPIO_InitStruct);		*/
-			GPIOB->BSRR|=GPIO_BSRR_BR5;									//открываем нижний MOSFET  подаем питание на LCD
+			GPIOB->BSRR=GPIO_BSRR_BR5;									//открываем нижний MOSFET  подаем питание на LCD
 			SysTick->VAL=0;
 			SysTick->CTRL|=SysTick_CTRL_ENABLE_Msk;
 			SysTick->CTRL|=SysTick_CTRL_TICKINT_Msk;

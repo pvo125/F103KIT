@@ -43,9 +43,11 @@
 
 extern uint8_t sd_ins_rem;
 
-volatile uint8_t canconnect;
-volatile uint8_t canerr_clr;
-volatile uint8_t cnt_enable;
+volatile uint8_t canconnect,canerr_clr,canerr_disp;
+static volatile uint8_t count;
+
+
+
 volatile uint8_t time_disp;
 	/********************************************************************
 *
@@ -191,7 +193,7 @@ void PendSV_Handler(void)
   */
 void RTC_IRQHandler(void)
 {
-		static uint8_t count=0;
+		//static uint8_t count=0;
 		uint32_t tmp, tmp1;																				// будем вычислять часы-минуты -секунды и обновлять соответ. ячейки памяти.
 		tmp=(RTC->CNTH<<16)|RTC->CNTL;
 		tmp %= 86400;		
@@ -205,31 +207,19 @@ void RTC_IRQHandler(void)
 		Time.sec =(uint8_t)(tmp1 %60);
 		if(time_show)
 		{
-			time_disp=1;	
+			time_disp=1;
 			if(canconnect)
 			{
-			GUI_SetFont(&GUI_Font6x8);
-			GUI_DispStringAt("REC ",120,5);
-			GUI_DispDec((uint8_t)((CAN1->ESR)>>24),3);
-			GUI_DispStringAt("TEC ",190,5);
-			GUI_DispDec((uint8_t)((CAN1->ESR)>>16),3);
-			GUI_DispStringAt("ERF ",260,5);
-			GUI_DispDec((uint8_t)(CAN1->ESR),1);
-			canconnect=0;
-			cnt_enable=1;
-			}
-			else if(cnt_enable)
-			{
+				canerr_disp=1;
 				count++;
-				if(count>1)
+				if(count>3)
 				{
-					count=0;
+					canconnect=0;
 					canerr_clr=1;
-					cnt_enable=0;
-				}	
+					canerr_disp=0;
+				}
 			}
-		
-		GUI_SetFont(&GUI_FontArial16);	
+			//GUI_SetFont(&GUI_FontArial16);	
 	  }
 		
 		RTC->CRL &=~RTC_CRL_SECF;	
@@ -280,15 +270,15 @@ void EXTI2_IRQHandler (void)
 	if(sleep_mode==0)
 	{
 		for(i=0;i<2000000;i++);
-	/* Выключаем PWM на подсветке */
-	//LcdWriteReg(CMD_SET_PWM_CONF); 			//set PWM for Backlight. Manual p.53
+	 /*Выключаем PWM на подсветке */
+	LcdWriteReg(CMD_SET_PWM_CONF); 			//set PWM for Backlight. Manual p.53
 	// 6 parameters to be set
-	//LcdWriteData(0x0004); 							// PWM Freq =100MHz/(256*(PWMF[7:0]+1))/256  PWMF[7:0]=4 PWM Freq=305Hz
-	//LcdWriteData(0x0000); 							// PWM duty cycle(0%)
-	//LcdWriteData(0x0001); 							// PWM controlled by host, PWM disable
-	//LcdWriteData(0x00f0); 							// brightness level 0x00 - 0xFF
-	//LcdWriteData(0x0000); 							// minimum brightness level =  0x00 - 0xFF
-	//LcdWriteData(0x0000);								// brightness prescalar 0x0 - 0xF
+	LcdWriteData(0x0004); 							// PWM Freq =100MHz/(256*(PWMF[7:0]+1))/256  PWMF[7:0]=4 PWM Freq=305Hz
+	LcdWriteData(0x0000); 							// PWM duty cycle(0%)
+	LcdWriteData(0x0001); 							// PWM controlled by host, PWM disable
+	LcdWriteData(0x00f0); 							// brightness level 0x00 - 0xFF
+	LcdWriteData(0x0000); 							// minimum brightness level =  0x00 - 0xFF
+	LcdWriteData(0x0000);								// brightness prescalar 0x0 - 0xF
 		
 	//LcdWriteReg(CMD_SET_DISPLAY_OFF);
 	//LcdWriteReg(CMD_ENTER_SLEEP);
@@ -313,7 +303,6 @@ void TIM2_IRQHandler(void)
 {
 	TIM2->SR &=~TIM_SR_CC1IF;  //Сбрасываем флаг вызвавшего прерывание от захвата TIM2_CH1
 	BrezErr+=BrezKoeff;
-	//Brez_Count++;
 	if (BrezErr>.5f)
 		{
 			TIM2->CCER|=TIM_CCER_CC2E;  //Подключаем выход таймера к каналу сравнения
@@ -321,11 +310,7 @@ void TIM2_IRQHandler(void)
 		}
 	else 
 		TIM2->CCER &=~TIM_CCER_CC2E;	//Отключаем выход таймера от канала сравнения
-	//if(Brez_Count==100)
-	//	{
-	//		Brez_Count=0;
-	//		BrezErr=0;
-	//	}
+	
 }
 
 /**
@@ -392,7 +377,7 @@ void TIM6_IRQHandler (void){
 void TIM7_IRQHandler (void)
 {
 		backlight_delay++;
-	if(backlight==BACKLIGHT_ON)
+		if(backlight==BACKLIGHT_ON)
 		{	
 			LcdWriteReg(CMD_SET_PWM_CONF); 			//set PWM for Backlight. Manual p.53
 			// 6 parameters to be set
@@ -443,7 +428,8 @@ void USB_LP_CAN1_RX0_IRQHandler(void){
 	
 }
 void CAN1_RX1_IRQHandler(void){
-	canconnect=1;
+	canconnect=1;//canerr_clr=0;
+	count=0;
 	CAN_Receive_IRQHandler(1);
 	CAN_RXProcess1();
 	

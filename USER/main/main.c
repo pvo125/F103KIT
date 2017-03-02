@@ -104,7 +104,7 @@ void Periph_Init(void){
 	GPIO_InitStruct.GPIO_Speed=GPIO_Speed_2MHz;
 	GPIO_Init(GPIOB,&GPIO_InitStruct);
 	
-	GPIOB->BSRR|=GPIO_BSRR_BR5;		//открываем нижний MOSFET  подаем питание на LCD
+	GPIOB->BSRR=GPIO_BSRR_BR5;		//открываем нижний MOSFET  подаем питание на LCD
 /*******************************************************************/	
 	
 	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_IPU;
