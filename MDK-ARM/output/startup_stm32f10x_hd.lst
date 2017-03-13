@@ -249,7 +249,7 @@ ARM Macro Assembler    Page 4
   148 00000000                 EXPORT           Reset_Handler             [WEAK
 ]
   149 00000000                 IMPORT           __main
-  150 00000000         ;IMPORT  SystemInit
+  150 00000000                 IMPORT           SystemInit
   151 00000000         ;LDR     R0, =SystemInit
   152 00000000         ;BLX     R0               
   153 00000000 4808            LDR              R0, =__main
@@ -1697,6 +1697,15 @@ Comment: __Vectors_Size used once
 ARM Macro Assembler    Page 1 Alphabetic symbol ordering
 External symbols
 
+SystemInit 00000000
+
+Symbol: SystemInit
+   Definitions
+      At line 150 in file ..\CMSIS\DeviceSupport\ST\STM32F10x\startup\arm\start
+up_stm32f10x_hd.s
+   Uses
+      None
+Comment: SystemInit unused
 __main 00000000
 
 Symbol: __main
@@ -1716,5 +1725,5 @@ up_stm32f10x_hd.s
    Uses
       None
 Comment: __use_two_region_memory unused
-2 symbols
-422 symbols in table
+3 symbols
+423 symbols in table

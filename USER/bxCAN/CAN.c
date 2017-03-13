@@ -25,6 +25,13 @@ uint32_t crc32_check(const uint8_t *buff,uint32_t nbytes);
 #else
 	#define NETNAME_INDEX  02   //F103_KIT
 #endif
+
+#define LEDPIN							GPIO_Pin_6
+#define LEDPORT						  GPIOC
+#define GPIO_BSRR_BRx 			GPIO_BSRR_BR6
+#define GPIO_BSRR_BSx 			GPIO_BSRR_BS6
+#define GPIO_IDR_IDRX       GPIO_IDR_IDR6
+
 extern TimeAlarm_TypeDef  Time,Alarm;
 
 extern int _cbButtonSkin(const WIDGET_ITEM_DRAW_INFO *pDrawItemInfo);
@@ -38,7 +45,7 @@ extern WM_HWIN hWin_timer;
 #define ID_PROGBAR_1     (GUI_ID_USER + 0x17)
 #define ID_DROPDOWN_0    (GUI_ID_USER + 0x18)
 
-#define NETNAME_INDEX  02   //F103_KIT 
+
 /********************************************************************
 *
 *       LcdWriteReg
@@ -511,7 +518,7 @@ void CAN_RXProcess1(void){
 		size_firmware|=CAN_Data_RX[1].Data[2]<<16;
 		size_firmware|=CAN_Data_RX[1].Data[3]<<24;
 		
-		Flash_unlock();
+		
 		
 #ifdef MEDIUM_DENSITY
 		temp=size_firmware/1024;
@@ -522,14 +529,25 @@ void CAN_RXProcess1(void){
 		if(size_firmware%2048)
 			temp++;
 #endif							
+		if(temp<=123)			// Если обновление влазит во вторую половину флэшь (0x40000-0x2800=0x3D800=251904=123*2048)
+		{
+			Flash_unlock();
+			Flash_page_erase(FIRM_UPD_PAGE,temp);		
 		
-		
-		Flash_page_erase(FIRM_UPD_PAGE,temp);		
-		CAN_Data_TX.ID=(NETNAME_INDEX<<8)|0x72;
-		CAN_Data_TX.DLC=2;
-		CAN_Data_TX.Data[0]=NETNAME_INDEX;
-		CAN_Data_TX.Data[1]='g';								// GET_DATA!
-		CAN_Transmit_DataFrame(&CAN_Data_TX);
+			CAN_Data_TX.ID=(NETNAME_INDEX<<8)|0x72;
+			CAN_Data_TX.DLC=2;
+			CAN_Data_TX.Data[0]=NETNAME_INDEX;
+			CAN_Data_TX.Data[1]='g';								// GET_DATA!
+			CAN_Transmit_DataFrame(&CAN_Data_TX);
+		}
+		else
+		{		// иначе отправляем сообщение об ошибке размера бинарника
+				CAN_Data_TX.ID=(NETNAME_INDEX<<8)|0x72;
+				CAN_Data_TX.DLC=2;
+				CAN_Data_TX.Data[0]=NETNAME_INDEX;
+				CAN_Data_TX.Data[1]='s';								// SIZE ERROR!	
+				CAN_Transmit_DataFrame(&CAN_Data_TX);
+		}
 		break;
 		case 6://(id=373 DOWNLOAD_FIRMWARE)
 			if((size_firmware-count)>=8)
@@ -544,10 +562,10 @@ void CAN_RXProcess1(void){
 				
 				if((count%240)==0)
 				{	
-					if(GPIOC->IDR & GPIO_IDR_IDR9)
-						GPIOC->BSRR=GPIO_BSRR_BR9;
+					if(LEDPORT->IDR & GPIO_IDR_IDRX)
+						LEDPORT->BSRR=GPIO_BSRR_BRx;
 					else
-						GPIOC->BSRR=GPIO_BSRR_BS9;	
+						LEDPORT->BSRR=GPIO_BSRR_BSx;	
 				}
 			}
 			else 

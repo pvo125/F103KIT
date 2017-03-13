@@ -8,6 +8,8 @@ void assert_failed(uint8_t* file, uint32_t line)
 	while(1){};
 }
 
+#define LEDPIN							GPIO_Pin_6
+#define LEDPORT						  GPIOC
 
 #define ID_BUTTON_YES (GUI_ID_USER + 0x01)
 #define ID_BUTTON_NO (GUI_ID_USER + 0x20)
@@ -146,8 +148,14 @@ void Periph_Init(void){
 		EXTI_InitStruct.EXTI_Mode=EXTI_Mode_Interrupt;
 		EXTI_InitStruct.EXTI_Trigger=EXTI_Trigger_Rising_Falling;
 		EXTI_Init(&EXTI_InitStruct);
-		
-		
+
+/*****************************************************************************
+*        LED pin  (PC6)    Вывод моргания светодиодом при CAN обновлении     *
+******************************************************************************/
+		GPIO_InitStruct.GPIO_Pin=LEDPIN;
+		GPIO_InitStruct.GPIO_Mode=GPIO_Mode_Out_PP;
+		GPIO_InitStruct.GPIO_Speed=GPIO_Speed_2MHz;
+		GPIO_Init(LEDPORT,&GPIO_InitStruct);			
 		
 
 /*****************************************************************************/
