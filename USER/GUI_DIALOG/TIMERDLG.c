@@ -42,21 +42,14 @@
 #define ID_BUTTON_2     (GUI_ID_USER + 0x1A)
 #define ID_TEXT_0     (GUI_ID_USER + 0x1B)
 
-#define ID_FRAMEWIN_3     (GUI_ID_USER + 0x1C)
-#define ID_BUTTON_OK     (GUI_ID_USER + 0x1D)
-#define ID_TEXT_1     (GUI_ID_USER + 0x1E)
-#define ID_WINDOW_1     (GUI_ID_USER + 0x1F)
+
 
 
 
 /*********************************************************************
-*
 *       Static data
-*
 **********************************************************************
 */
-
-
 extern WM_HWIN hWin_menu;
 extern WM_HWIN hIcon_PWM,hIcon_Time, hIcon_SD,hIcon_PREV ;
 extern int _cbButtonSkin(const WIDGET_ITEM_DRAW_INFO *pDrawItemInfo);
@@ -71,52 +64,6 @@ float BrezKoeff=0;
 int TimerONOFF=0;
 uint8_t Brez_Count=0;
 float BrezErr=0;
-
-/*********************************************************************
-*
-*       _OwnerDraw
-*/
-//int _OwnerDraw(const WIDGET_ITEM_DRAW_INFO *pDrawItemInfo){
-//	GUI_RECT Rect;
-//	switch(pDrawItemInfo->Cmd)
-//
-
-/*********************************************************************
-*
-*       _cbMESSAGE
-*/
-
-static void _cbMESSAGE(WM_MESSAGE * pMsg) {
-  GUI_RECT pRECT;
-	int     NCode,x,y;
-  int     Id;
-	switch (pMsg->MsgId) {
-		case WM_DELETE:
-			hWin_message=0;
-		break;	
-		case WM_NOTIFY_PARENT:
-			Id    = WM_GetId(pMsg->hWinSrc);
-			NCode = pMsg->Data.v;
-				switch(Id) {
-					case ID_BUTTON_OK: 
-						switch(NCode) {
-							case WM_NOTIFICATION_RELEASED:
-								WM_GetWindowRectEx(hWin_message, &pRECT);
-								x=WM_GetWindowSizeX(hWin_message);
-								y=WM_GetWindowSizeY(hWin_message);
-								WM_DeleteWindow(hWin_message);
-								GUI_ClearRect(pRECT.x0,pRECT.y0,pRECT.x0+x,pRECT.y0+y);
-								
-							break;	
-							}
-					break;
-					}
-		break;
-		default:
-			WM_DefaultProc(pMsg);
-		break;
-	}
-}
 
 /*********************************************************************
 *
@@ -330,55 +277,9 @@ static void _cbTIMER(WM_MESSAGE * pMsg) {
     break;
 	}
 }
-
-/*********************************************************************
+/*
 *
-*       Public code
-*
-**********************************************************************
 */
-/*********************************************************************
-*
-*       CreateTIMER
-*/
-
-WM_HWIN Message(const char *p,int flag ){
-	WM_HWIN hWin;
-	BUTTON_Handle hButton;
-	TEXT_Handle hText;
-	int temp;
-	if(hWin_message!=0)
-			return hWin_message;
-	GUI_SetFont(&GUI_FontArial16);
-	temp=GUI_GetStringDistX(p);
-	hWin_message=FRAMEWIN_CreateEx((240-temp/2),100,temp+16, 80,0, WM_CF_SHOW,0,ID_FRAMEWIN_3,0,0);
-	FRAMEWIN_SetFont(hWin_message,&GUI_FontArial16);
-	FRAMEWIN_SetActive(hWin_message, 1);
-	if(flag==Msg_Err)
-	{
-		FRAMEWIN_SetBarColor(hWin_message,1,GUI_RED);
-		FRAMEWIN_SetText(hWin_message, "Ошибка");
-	}
-	else 
-		FRAMEWIN_SetText(hWin_message, "Сообщение");
-	FRAMEWIN_SetTextAlign(hWin_message,GUI_TA_HCENTER);
-	
-	hWin=WINDOW_CreateEx(3,22,temp+9,55,hWin_message,WM_CF_SHOW,0,ID_WINDOW_1,_cbMESSAGE);
-	WINDOW_SetBkColor(hWin, GUI_WHITE);
-	
-	hButton=BUTTON_CreateEx(((temp+16)/2-15),32,30,20,hWin, WM_CF_SHOW,0,ID_BUTTON_OK);
-	BUTTON_SetText(hButton, "OK");
-	
-	hText=TEXT_CreateEx(5,10,temp,20,hWin,WM_CF_SHOW,TEXT_CF_HCENTER,ID_TEXT_1,p);
-	TEXT_SetFont(hText,&GUI_FontArial16);
-	
-	
-	WM_MakeModal(hWin_message);
-	GUI_SetFont(&GUI_Font8x16);
-	return hWin_message;
-}
-
-
 
 WM_HWIN CreateTIMER(void) {
   hWin_timer = GUI_CreateDialogBox(_aTIMER, GUI_COUNTOF(_aTIMER), _cbTIMER, hWin_menu, 0, 0);

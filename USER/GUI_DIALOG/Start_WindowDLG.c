@@ -37,7 +37,7 @@
 #define ID_ICON_CALIB    (GUI_ID_USER + 0x04)
 #define ID_ICON_NEXT     (GUI_ID_USER + 0x05)
 
-//#define ID_WINDOW_1     (GUI_ID_USER + 0x1B)
+
 #define ID_BUTTON_BACK     (GUI_ID_USER + 0x1C)
 #define ID_ICON_PAINT     (GUI_ID_USER + 0x15)
 #define ID_ICON_EXIT 			(GUI_ID_USER + 0x16)
@@ -56,6 +56,11 @@
 #define ID_ICON_BROWN     (GUI_ID_USER + 0x24)
 #define ID_ICON_ORANGE     (GUI_ID_USER + 0x25)
 #define ID_ICON_WHITE     (GUI_ID_USER + 0x26)
+
+#define ID_BUTTON_OK     (GUI_ID_USER + 0x1B)
+#define ID_WINDOW_1     (GUI_ID_USER + 0x01)
+#define ID_FRAMEWIN_3     (GUI_ID_USER + 0x1A)
+#define ID_TEXT_1     (GUI_ID_USER + 0x19)
 
 #define ID_EDIT_1  				   (GUI_ID_USER + 0x27)
 	
@@ -97,9 +102,81 @@ int color[]={GUI_BLUE,GUI_GREEN,GUI_RED,GUI_CYAN,GUI_MAGENTA,GUI_YELLOW,GUI_WHIT
 uint8_t sd_insert;
 uint8_t sd_ins_rem;
 
-// USER END
-
-// USER START (Optionally insert additional static data)
+/*********************************************************************
+*       			_cbMESSAGE
+*********************************************************************/
+static void _cbMESSAGE(WM_MESSAGE * pMsg) {
+  GUI_RECT pRECT;
+	int     NCode,x,y;
+  int     Id;
+	switch (pMsg->MsgId) {
+		case WM_DELETE:
+			hWin_message=0;
+		break;	
+		case WM_NOTIFY_PARENT:
+			Id    = WM_GetId(pMsg->hWinSrc);
+			NCode = pMsg->Data.v;
+				switch(Id) {
+					case ID_BUTTON_OK: 
+						switch(NCode) {
+							case WM_NOTIFICATION_RELEASED:
+								WM_GetWindowRectEx(hWin_message, &pRECT);
+								x=WM_GetWindowSizeX(hWin_message);
+								y=WM_GetWindowSizeY(hWin_message);
+								WM_DeleteWindow(hWin_message);
+								GUI_ClearRect(pRECT.x0,pRECT.y0,pRECT.x0+x,pRECT.y0+y);
+								
+							break;	
+							}
+					break;
+					}
+		break;
+		default:
+			WM_DefaultProc(pMsg);
+		break;
+	}
+}
+/*********************************************************************
+*      				Message
+**********************************************************************/
+WM_HWIN Message(const char *p,int flag ){
+	WM_HWIN hWin;
+	BUTTON_Handle hButton;
+	TEXT_Handle hText;
+	int temp;
+	if(hWin_message!=0)
+			return hWin_message;
+	GUI_SetFont(&GUI_FontArial16);
+	temp=GUI_GetStringDistX(p);
+	hWin_message=FRAMEWIN_CreateEx((240-temp/2),100,temp+16, 80,0, WM_CF_SHOW,0,ID_FRAMEWIN_3,0,0);
+	FRAMEWIN_SetFont(hWin_message,&GUI_FontArial16);
+	FRAMEWIN_SetActive(hWin_message, 1);
+	if(flag==Msg_Err)
+	{
+		FRAMEWIN_SetBarColor(hWin_message,1,GUI_RED);
+		FRAMEWIN_SetText(hWin_message, "Ошибка");
+	}
+	else 
+		FRAMEWIN_SetText(hWin_message, "Сообщение");
+	FRAMEWIN_SetTextAlign(hWin_message,GUI_TA_HCENTER);
+	
+	hWin=WINDOW_CreateEx(3,22,temp+9,55,hWin_message,WM_CF_SHOW,0,ID_WINDOW_1,_cbMESSAGE);
+	WINDOW_SetBkColor(hWin, GUI_WHITE);
+	
+	hButton=BUTTON_CreateEx(((temp+16)/2-15),32,30,20,hWin, WM_CF_SHOW,0,ID_BUTTON_OK);
+	BUTTON_SetText(hButton, "OK");
+	
+	hText=TEXT_CreateEx(5,10,temp,20,hWin,WM_CF_SHOW,TEXT_CF_HCENTER,ID_TEXT_1,p);
+	TEXT_SetFont(hText,&GUI_FontArial16);
+	
+	
+	WM_MakeModal(hWin_message);
+	GUI_SetFont(&GUI_Font8x16);
+	return hWin_message;
+}
+/*********************************************************************
+*       			wcstrcat
+**********************************************************************/
 void wcstrcat(TCHAR *string_1,const TCHAR *string_2)
 {
 	for(;;)
@@ -119,15 +196,9 @@ void wcstrcat(TCHAR *string_1,const TCHAR *string_2)
 	}
 }
 
-// USER END
-
 /*********************************************************************
-*
-*       Static code
-*
-**********************************************************************
-*/
-
+*       			_cbSTART
+**********************************************************************/
 static void _cbSTART(WM_MESSAGE* pMsg) {
 	int     NCode;
   int     Id;
@@ -238,6 +309,9 @@ static void _cbSTART(WM_MESSAGE* pMsg) {
 
 
 
+/*********************************************************************
+*       			_cbBkWin
+***********************************************************************/
 void _cbBkWin(WM_MESSAGE* pMsg) {
   
 	int			i;
@@ -251,9 +325,6 @@ void _cbBkWin(WM_MESSAGE* pMsg) {
 				case ID_ICON_EXIT:
 					switch(NCode) {
 						case WM_NOTIFICATION_RELEASED:
-							//backlight=BACKLIGHT_OFF;
-							//backlight_delay=0;
-							//sleep_mode=1;
 							NVIC_SystemReset();
 						break;
 					}
@@ -400,12 +471,9 @@ void CreateStart(void)
 		alrm=(BKP->DR1<<16 |BKP->DR2);
 		cnt=RTC->CNTH<<16|RTC->CNTL;
 		if(alrm>cnt)
-			//GUI_DrawBitmap(&bmAlarmA,10,15);
 			ICONVIEW_AddBitmapItem(hALARMA,&bmAlarmA,""); //&bmAlarmA
 		else
-			//GUI_DrawBitmap(&bmAlarm_D,10,15);
 			ICONVIEW_AddBitmapItem(hALARMA,&bmAlarm_D,""); //&bmAlarm_D
-					
 	}
 	else
 		WM_ShowWindow(hWin_start);
@@ -460,10 +528,7 @@ void MainTask(void)
 		{
 			GUI_SetBkColor(GUI_DARKBLUE);
 			GUI_ClearRect(120,5,290,15);
-			//GUI_ClearRect(190,5,230,15);
-			//GUI_ClearRect(260,5,290,15);
 			canerr_clr=0;
-			
 		}
 		if(canerr_disp)	
 		{
@@ -495,24 +560,15 @@ void MainTask(void)
 				if(sd_error==SD_OK)
 					{
 						Message("SD карта вставлена",Msg_Msg);
-					//GUI_MessageBox("SD карта вставлена", "Message", GUI_MESSAGEBOX_CF_MODAL);
-					//if(start)
-					//	GUI_ClearRect(180,105,296,165);
 					}	
 				else
 					{
 						Message("Ошибка SD карты",Msg_Err);
-						//GUI_MessageBox("Ошибка SD карты", "Message", GUI_MESSAGEBOX_CF_MODAL);
-					//if(start)
-					//	GUI_ClearRect(180,105,296,165);
 					}
 			}			
 			else
 			{
 			  Message("SD карта удалена",Msg_Msg);
-				//GUI_MessageBox("SD карта удалена", "Message", GUI_MESSAGEBOX_CF_MODAL);
-				//if(start)
-				//GUI_ClearRect(180,105,296,165);
 			}
 		}
 		if(ALARM_INT)
@@ -552,9 +608,7 @@ void MainTask(void)
 			NVIC_SystemReset();
 		}
 		if(sleep_mode)
-			{
-			
-										
+		{
 			SysTick->CTRL&=~SysTick_CTRL_ENABLE_Msk;
 			SysTick->CTRL&=~SysTick_CTRL_TICKINT_Msk;
 			NVIC_DisableIRQ(EXTI0_IRQn);	
@@ -684,7 +738,7 @@ void MainTask(void)
 				WM_Exec();
 				NVIC_EnableIRQ(EXTI0_IRQn); 									//Разрешение TIM2_IRQn прерывания
 				NVIC_EnableIRQ(TIM7_IRQn); 									//Разрешение TIM7_IRQn прерывания
-				NVIC_EnableIRQ(RTC_IRQn);							//Разрешение RTC_IRQn прерывания
+				NVIC_EnableIRQ(RTC_IRQn);										//Разрешение RTC_IRQn прерывания
 				}
 			
 			NVIC_EnableIRQ(TIM6_IRQn); 							//Разрешение TIM6_DAC_IRQn прерывания
@@ -695,6 +749,5 @@ void MainTask(void)
 	}
 }
 
-// USER END
 
 /*************************** End of file ****************************/

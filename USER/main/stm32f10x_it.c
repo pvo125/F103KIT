@@ -30,31 +30,13 @@
 /* Includes ------------------------------------------------------------------*/
 #include "header.h"
 #include "CAN.h"
-/** @addtogroup STM32F4xx_StdPeriph_Examples
-  * @{
-  */
-
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
 
 extern uint8_t sd_ins_rem;
-
 volatile uint8_t canconnect,canerr_clr,canerr_disp;
 static volatile uint8_t count;
-
-
-
 volatile uint8_t time_disp;
-	/********************************************************************
-*
+/********************************************************************
 *       LcdWriteReg
-*
-* Function description:
-*   Sets display register
 */
 static __INLINE void LcdWriteReg(U16 Data) {
   // ... TBD by user
@@ -62,20 +44,12 @@ static __INLINE void LcdWriteReg(U16 Data) {
 }
 
 /********************************************************************
-*
 *       LcdWriteData
-*
-* Function description:
-*   Writes a value to a display register
 */
 static __INLINE  void LcdWriteData(U16 Data) {
   // ... TBD by user
 	LCD_DATA_ADDRESS=Data;
 }
-
-
-
-
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Exceptions Handlers                         */
@@ -193,11 +167,10 @@ void PendSV_Handler(void)
   */
 void RTC_IRQHandler(void)
 {
-		//static uint8_t count=0;
-		uint32_t tmp, tmp1;																				// будем вычислять часы-минуты -секунды и обновлять соответ. ячейки памяти.
+		uint32_t tmp, tmp1;													// будем вычислять часы-минуты -секунды и обновлять соответ. ячейки памяти.
 		tmp=(RTC->CNTH<<16)|RTC->CNTL;
 		tmp %= 86400;		
-	if (tmp==0)																			// Если настала полночь
+	if (tmp==0)																		// Если настала полночь
 		DateCalc();																	// то "сбегаем" обновим дату в соотв. ячейках памяти.
 		
 	// Вычисленное время запишем в соотв. ячейки памяти чтобы выйдя из прерывания отображать текущее время на экране 	
@@ -219,7 +192,7 @@ void RTC_IRQHandler(void)
 					canerr_disp=0;
 				}
 			}
-			//GUI_SetFont(&GUI_FontArial16);	
+			
 	  }
 		
 		RTC->CRL &=~RTC_CRL_SECF;	
@@ -428,7 +401,7 @@ void USB_LP_CAN1_RX0_IRQHandler(void){
 	
 }
 void CAN1_RX1_IRQHandler(void){
-	canconnect=1;//canerr_clr=0;
+	canconnect=1;
 	count=0;
 	CAN_Receive_IRQHandler(1);
 	CAN_RXProcess1();
@@ -443,14 +416,5 @@ void SDIO_IRQHandler(void)
 {
 	SD_ProcessIRQSrc();
 }
-
-
-/**
-  * @}
-  */ 
-
-/**
-  * @}
-  */ 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

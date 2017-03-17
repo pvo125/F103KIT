@@ -468,26 +468,26 @@ int main(void){
 	//pGUI_Init=(void(*)(void))GUI_Init;
 	
 	Periph_Init();
-	Init_FSMC_GPIO();							//SSD1963_LowLevel_Init();
+	Init_FSMC_GPIO();							
 	RTC_Init();	
 	MX25_LowLevel_Init();
 	TSC2046_LowLevel_Init();
 	bxCAN_Init();
-	
-	//brightness=BKP->
+		
 	if(!brightness)
 		brightness=BRIGHTNESS_MED;
 	
-	/*SCB->SCR|=SCB_SCR_SLEEPDEEP;						// Разрешаем SLEEPDEEP по команде WFI WFE
+	/*SCB->SCR|=SCB_SCR_SLEEPDEEP;					// Разрешаем SLEEPDEEP по команде WFI WFE
 	PWR->CR&= ~PWR_CR_PDDS;									// Сбрасываем бит PDDS (Stop mode)
-	PWR->CR|=	PWR_CR_LPDS;			*/							// Voltage regulator low-power during Stop mode
+	PWR->CR|=	PWR_CR_LPDS;			*/					// Voltage regulator low-power during Stop mode
+	
 	DBGMCU->CR|=DBGMCU_CR_DBG_STOP;
 	DBGMCU->CR|=DBGMCU_CR_DBG_CAN1_STOP;
 	
 	NVIC_EnableIRQ(TIM2_IRQn); 									//Разрешение TIM2_IRQn прерывания
-	NVIC_EnableIRQ(TIM6_IRQn); 							//Разрешение TIM6_DAC_IRQn прерывания
+	NVIC_EnableIRQ(TIM6_IRQn); 									//Разрешение TIM6_DAC_IRQn прерывания
 	NVIC_EnableIRQ(TIM7_IRQn); 									//Разрешение TIM7_IRQn прерывания
-	NVIC_EnableIRQ(RTC_IRQn);							//Разрешение RTC_IRQn прерывания
+	NVIC_EnableIRQ(RTC_IRQn);										//Разрешение RTC_IRQn прерывания
 	NVIC_EnableIRQ(SDIO_IRQn);									//Разрешение SDIO_IRQn прерывания
 	
 	NVIC_EnableIRQ(EXTI2_IRQn);		
@@ -507,9 +507,7 @@ int main(void){
 		{
 			if(Boot_menu()!=SD_OK)
 			{
-			 
-				//GUI_MessageBox("Ошибка чтения SD карты", "Message", 0);
-				MainTask();
+			 MainTask();
 			}
 			else
 			{

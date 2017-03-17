@@ -73,10 +73,8 @@ static __INLINE  void LcdWriteData(U16 Data) {
 *														bxCAN_Init
 ****************************************************************************************************************/
 void bxCAN_Init(void){
-
 	GPIO_InitTypeDef GPIO_InitStruct;
 		
-	
 	/*Включаем тактирование CAN в модуле RCC*/	
 	RCC->APB1ENR|=RCC_APB1ENR_CAN1EN;
 	/*Настройка выводов CAN  CAN1_TX=PA12   CAN1_RX=PA11  */
@@ -98,11 +96,6 @@ void bxCAN_Init(void){
 	NVIC_SetPriority( USB_LP_CAN1_RX0_IRQn,1);
 	NVIC_SetPriority(CAN1_RX1_IRQn, 1);
 	
-
-//			Init mode				//
-
-	//CAN1->MCR|=CAN_MCR_RESET;
-	
 	/*Exit SLEEP mode*/
 	CAN1->MCR&=~CAN_MCR_SLEEP;
 	/*Enter Init mode bxCAN*/
@@ -123,18 +116,15 @@ void bxCAN_Init(void){
 
 	CAN1->BTR|=CAN_BTR_BRP&23;																	/* tq=(23+1)*tPCLK1=2/3 uS  */
 	CAN1->BTR|=0x01000000;																			/*SJW[1:0]=1  (SJW[1:0]+1)*tq=tRJW	*/		
-	
 	CAN1->BTR&=~CAN_BTR_TS1;;
 	CAN1->BTR|=0x00070000;																			/* TS1[3:0]=0X07  tBS1=tq*(7+1)=8*tq */
-	
 	CAN1->BTR&=~CAN_BTR_TS2;
 	CAN1->BTR|=0x00200000;																			/* TS2[2:0]=0X02  tBS2=tq*(2+1)=3*tq */
-																																// | 1tq |  		8tq  |  	3tq| 		T=8uS f=125kHz
-																																// |-----------------|-------|		
-																																// 								Sample point = 75%	
+																															// | 1tq |  		8tq  |  	3tq| 		T=8uS f=125kHz
+																															// |-----------------|-------|		
+																															// 								Sample point = 75%	
 	/*Init filters*/
-	
-	CAN1->FMR|=	CAN_FMR_FINIT;																		// Filter Init Mode
+	CAN1->FMR|=	CAN_FMR_FINIT;																	  	// Filter Init Mode
 	CAN1->FM1R|=CAN_FM1R_FBM0|CAN_FM1R_FBM1|CAN_FM1R_FBM2;  				// Filters bank 0 1 2  mode ID List
 	CAN1->FS1R&=~(CAN_FS1R_FSC0|CAN_FS1R_FSC1|CAN_FS1R_FSC2);				// Filters bank 0 1 2  scale 16 bits
 	CAN1->FFA1R&=~(CAN_FFA1R_FFA0|CAN_FFA1R_FFA1|CAN_FFA1R_FFA2);		// Filters bank 0 1 2  FIFO0		
@@ -175,7 +165,7 @@ void bxCAN_Init(void){
 	
 	/* Filters activation  */	
 	CAN1->FA1R|=CAN_FFA1R_FFA0|CAN_FFA1R_FFA1|CAN_FFA1R_FFA2|
-							CAN_FFA1R_FFA3|CAN_FFA1R_FFA4|CAN_FFA1R_FFA5;		//
+							CAN_FFA1R_FFA3|CAN_FFA1R_FFA4|CAN_FFA1R_FFA5;		
 							
 	/*Exit filters init mode*/
 	CAN1->FMR&=	~CAN_FMR_FINIT;
@@ -299,7 +289,7 @@ void CAN_RXProcess0(void){
 		
 		CAN_Data_TX.ID=(NETNAME_INDEX<<8)|0x80;  
 		CAN_Data_TX.DLC=6;
-		CAN_Data_TX.Data[0]=NETNAME_INDEX; //netname_index для F103_KIT
+		CAN_Data_TX.Data[0]=NETNAME_INDEX; 			//netname_index для F103_KIT
 		CAN_Data_TX.Data[1]=Time.hour;
 		CAN_Data_TX.Data[2]=Time.min;
 		CAN_Data_TX.Data[3]=Time.day;
@@ -307,7 +297,6 @@ void CAN_RXProcess0(void){
 		CAN_Data_TX.Data[5]=Time.year;
 		CAN_Transmit_DataFrame(&CAN_Data_TX);
 		break;
-		
 		case 2://(id=381 data set_rtc)
 		//
 		Time.hour=CAN_Data_RX[0].Data[1];
@@ -318,11 +307,10 @@ void CAN_RXProcess0(void){
 		Time.year=CAN_Data_RX[0].Data[5];
 		//RTC_SetDate(RTC_Format_BIN, &RTC_Date);
 		break;
-		
 		case 3://(id=082 GET_TIMER_DATA remote )
 		//
 		CAN_Data_TX.ID=(NETNAME_INDEX<<8)|0x82;  
-		CAN_Data_TX.Data[0]=NETNAME_INDEX; //netname_index для F103_KIT
+		CAN_Data_TX.Data[0]=NETNAME_INDEX; 							//netname_index для F103_KIT
 		CAN_Data_TX.Data[1]=(uint8_t)PhaseBrez;
 		CAN_Data_TX.Data[2]=(uint8_t)PhasePower;
 		CAN_Data_TX.Data[3]=(uint8_t)BrezPower;
@@ -343,7 +331,7 @@ void CAN_RXProcess0(void){
 			if((backlight==BACKLIGHT_OFF)||(backlight==BACKLIGHT_LOW))
 			{/* Включаем PWM на подсветке */
 					LcdWriteReg(CMD_EXIT_SLEEP);
-					for(temp=0;temp<180000;temp++);//GUI_Delay(5);
+					for(temp=0;temp<180000;temp++);			//GUI_Delay(5);
 					LcdWriteReg(CMD_SET_PWM_CONF); 			//set PWM for Backlight. Manual p.53
 					// 6 parameters to be set
 					LcdWriteData(0x0004); 							// PWM Freq =100MHz/(256*(PWMF[7:0]+1))/256  PWMF[7:0]=4 PWM Freq=305Hz
@@ -369,7 +357,7 @@ void CAN_RXProcess0(void){
 		if((backlight==BACKLIGHT_OFF)||(backlight==BACKLIGHT_LOW))
 			{/* Включаем PWM на подсветке */
 					LcdWriteReg(CMD_EXIT_SLEEP);
-					for(temp=0;temp<180000;temp++);//GUI_Delay(5);
+					for(temp=0;temp<180000;temp++);			//GUI_Delay(5);
 					LcdWriteReg(CMD_SET_PWM_CONF); 			//set PWM for Backlight. Manual p.53
 					// 6 parameters to be set
 					LcdWriteData(0x0004); 							// PWM Freq =100MHz/(256*(PWMF[7:0]+1))/256  PWMF[7:0]=4 PWM Freq=305Hz
@@ -446,7 +434,7 @@ void CAN_RXProcess0(void){
 			if((backlight==BACKLIGHT_OFF)||(backlight==BACKLIGHT_LOW))
 			{/* Включаем PWM на подсветке */
 					LcdWriteReg(CMD_EXIT_SLEEP);
-					for(temp=0;temp<180000;temp++);//GUI_Delay(5);
+					for(temp=0;temp<180000;temp++);			//GUI_Delay(5);
 					LcdWriteReg(CMD_SET_PWM_CONF); 			//set PWM for Backlight. Manual p.53
 					// 6 parameters to be set
 					LcdWriteData(0x0004); 							// PWM Freq =100MHz/(256*(PWMF[7:0]+1))/256  PWMF[7:0]=4 PWM Freq=305Hz
@@ -464,32 +452,14 @@ void CAN_RXProcess0(void){
 			WM_SetFocus(hItem);	
 			hItem = WM_GetDialogItem(hWin_timer, ID_BUTTON_0);	
 			BUTTON_SetSkin(hItem, BUTTON_SKIN_FLEX);
-			
 		}
 		break;
-		case 8://(id=384 data get alarm_a)
-		//
 		
-		break;
-		case 10://(id=385 data set alarm_a)
-		//
-		
-		
-		break;
-		case 11://(id=385 remote disable alarm_a)
-		//
-		
-		
-		break;
 		default:
 		break;	
-	
 	}
-
 	/*Разрешение прерываний FIFO0 */
 	CAN1->IER|=CAN_IER_FMPIE0;
-	//new_message=0;
-
 }	
 
 /*
@@ -503,7 +473,6 @@ void CAN_RXProcess1(void){
 	uint8_t temp;
 	uint32_t crc;
 	switch(CAN_Data_RX[1].FMI) {
-		
 		case 4://(id=371 UPDATE_FIRMWARE_REQ)
 			// если получили запрос на обновление 
 		// * вытащить из CAN_Data_RX[1].Data[0]...CAN_Data_RX[1].Data[3] размер прошивки и записать в size_firmware;
@@ -573,10 +542,8 @@ void CAN_RXProcess1(void){
 				Flash_prog((uint16_t*)&CAN_Data_RX[1].Data[0],(uint16_t*)(FIRM_UPD_PAGE+count),(size_firmware-count));
 				count+=(size_firmware-count);
 			}
-			
 			if(size_firmware==count)	
 			{
-				
 				crc=crc32_check((const uint8_t*)FIRM_UPD_PAGE,(size_firmware-4));
 				if(crc==*(uint32_t*)(FIRM_UPD_PAGE+size_firmware-4))
 				{
@@ -587,8 +554,6 @@ void CAN_RXProcess1(void){
 					CAN_Transmit_DataFrame(&CAN_Data_TX);
 					
 					write_flashflag=1;
-					
-					
 				}
 				else
 				{
