@@ -35,6 +35,6 @@ SN65HVD230.
 * Для получения готового bin файла делается последовательность:
   * $K\ARM\ARMCC\BIN\fromelf.exe --bin -o F103_KIT.bin !L  получаем из .axf бинарник .bin
   * srec_cat F103_KIT.bin -bin -exclude 0x1C 0x28 -length-l-e 0x1C 4 -generate 0x20 0x28 -repeat-string F103_KIT -o F103_KIT.bin -bin -
-  исключаем из бинарника адреса с 0x1C до 0x28 по адресу 0x1c записываем 4 байта размер бинарника. По адресу 0x20 8 байт строки F103_KIT
+  исключаем из бинарника адреса с 0x1C до 0x28 по адресу 0x1c записываем 4 байта размер бинарника. По адресу 0x20 8 байт строки "F103_KIT"
    * srec_cat F103_KIT.bin -bin -crc32-l-e  -max-addr F103_KIT.bin -bin -o F103_KIT.bin - считаем crc32 для полученного бинарника
    и сохраняем его в конце файла  F103_KIT.bin.
