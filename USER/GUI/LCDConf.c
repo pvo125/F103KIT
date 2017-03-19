@@ -434,12 +434,20 @@ void Touch_calibration(void){
 	{
 		GUI_DispStringHCenterAt("PRESS",Xd[i],Yd[i]+10);
 		DrawTarget(Xd[i],Yd[i]);
-		while(_TouchIsPresset()==0) {}
+		for(;;)                            															//while(_TouchIsPresset()==0) {}
+		{
+			if(!(GPIOB->IDR&GPIO_IDR_IDR11))											
+			{
+				GUI_Delay(10);
+				if(!(GPIOB->IDR&GPIO_IDR_IDR11))
+					break;
+			}
+		}  
 		GUI_Delay(1500);
-			GPIOB->BSRR=GPIO_BSRR_BR12;
-			Xt[i]=_TouchPositionX();
-			Yt[i]=_TouchPositionY();
-			GPIOB->BSRR=GPIO_BSRR_BS12;
+		GPIOB->BSRR=GPIO_BSRR_BR12;
+		Xt[i]=_TouchPositionX();
+		Yt[i]=_TouchPositionY();
+		GPIOB->BSRR=GPIO_BSRR_BS12;
 		GUI_Clear();
 		GUI_Delay(2000);
 		
